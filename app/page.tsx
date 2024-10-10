@@ -304,18 +304,22 @@ export default function Component() {
         </div>
       )}
       {showPrivacyPolicy && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white p-8 rounded-lg shadow-xl max-w-2xl max-h-[80vh] overflow-y-auto relative">
-            <button
-              onClick={() => setShowPrivacyPolicy(false)}
-              className="absolute top-4 right-4 p-2 rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 hover:text-gray-700 transition-colors duration-200"
-            >
-              <X size={24} />
-            </button>
-            <h2 className="text-2xl font-bold mb-4">Privacy Policy</h2>
-            <h3 className="text-xl font-semibold mb-2">ARTISTCONSENT LTD Privacy Policy</h3>
-            <ScrollArea className="h-[calc(80vh-120px)] pr-4">
-              <div className="space-y-4 text-sm">
+  <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div className="bg-white rounded-lg shadow-xl w-full max-w-2xl h-[90vh] flex flex-col">
+      <div className="p-6 flex-shrink-0">
+        <div className="flex justify-between items-center">
+          <h2 className="text-2xl font-bold">Privacy Policy</h2>
+          <button
+            onClick={() => setShowPrivacyPolicy(false)}
+            className="p-2 rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 hover:text-gray-700 transition-colors duration-200"
+          >
+            <X size={24} />
+          </button>
+        </div>
+        <h3 className="text-xl font-semibold mt-4">ARTISTCONSENT LTD Privacy Policy</h3>
+      </div>
+      <ScrollArea className="flex-grow px-6 pb-6">
+        <div className="space-y-4 text-sm">
                 <p>
                   ARTISTCONSENT LTD ("we," "our," or "us") operates the website https://artistconsent.com/ (the "Site"). This Privacy Policy outlines how we collect, use, and protect your personal information when you visit our Site, sign up for beta access, or receive updates from us.
                 </p>
@@ -390,10 +394,10 @@ export default function Component() {
                   Email: artistconsent2024@gmail.com
                 </p>
               </div>
-            </ScrollArea>
-          </div>
-        </div>
-      )}
+      </ScrollArea>
+    </div>
+  </div>
+)}
       <ToastContainer />
       <style jsx>{`
         @keyframes gradient-border {
