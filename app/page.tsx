@@ -134,7 +134,7 @@ export default function Component() {
               <CardContent className="space-y-4 pt-3 flex-grow overflow-y-auto flex flex-col justify-center">
                 <div className="space-y-4">
                   <p className="text-gray-800">
-                    In a world where digital technologies automate more aspects of the creative process, it's essential for artists to have agency over their works and likeness. In other words, to stand out, their creative vision needs to be potent and authentic to who they are.
+                    In a world where digital technologies automate more of the creative process, it's essential for artists to have agency over their works and likeness. In other words, to stand out, their creative vision needs to be potent and authentic to who they are.
                   </p>
                   <p className="text-gray-800">
                     At ArtistConsent, we're building tools to help artists cut through the noise and share stories that resonate on a human level.
